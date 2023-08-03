@@ -41,11 +41,15 @@ They are generally good for 2.5D games, with objects drawn in perspective.
 
 !> Firstly, we must **add the 2D Stylized Lighting System to the scene** (it's in prefabs folder): 
 
+!> You also need to **unpack the prefab**, since any changes made to a prefab won't be saved!!!
+
 ![logo](images/5.png ':size=600')
 
-!> Now, **set the camera Transform**(in the  2D Stylized Lighting System settings) **to your camera**, or the parent that controlls it.
+> Or create an empty gameobject and add 2D stylized lighting component :
 
-!> You also need to **unpack the prefab**, since any changes made to a prefab won't be saved!!!
+![logo](images/setup.png ':size=200')
+
+!> Now, **set the camera Transform**(in the  2D Stylized Lighting System settings) **to your camera**, or the parent that controlls it.
 
 ![logo](images/6.png ':size=600')
 
