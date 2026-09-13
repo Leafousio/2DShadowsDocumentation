@@ -16,6 +16,8 @@ projects it with an offset, then its ads a ton of effect to give a feeling of â€
 
 !>   Create a Water layer and exclude it from rendering : 
 
+?> Modern 2D Shadows does not create this GameObject layer automatically. Add it once in Project Settings before assigning it to the pool.
+
 ![logo](images/11.png ':size=600')
 
 !>   Take a render texture and assign in to the water camera output :

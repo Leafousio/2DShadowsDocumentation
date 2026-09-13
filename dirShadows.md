@@ -12,17 +12,19 @@ https://www.youtube.com/watch?v=BCR2xQ7jWMU (UNITY 2021 LTS and higher)
 
 #### - Step 2 : Texture settings
 
-!> To create System Shadows, you must **make sprite textures** used as shadow casters **readable** :
+!> A readable sprite texture is required only when the caster uses **Auto** pivot detection. Auto scans the sprite pixels to find its bottom contact point.
+
+?> If a texture cannot be made Read/Write enabled, select **Sprite** or **Custom** as the Pivot Source on Stylized Shadow Caster 2D.
 
 ![logo](images/1.png ':size=600')
 
-#### - Step 3 : Layers and tags settings 
+#### - Step 3 : Sorting layer settings 
 
-!> Create a **Shadow tag** for shadow casters, and **Shadows sorting layer** : 
+!> Create the sorting layer named in **Shadow Sorting Layer**. The default name is **Shadows**.
 
-![logo](images/2.png ':size=600')
+?> Modern 2D Shadows does not create or rename GameObject layers, sorting layers or tags, and does not edit ProjectSettings/TagManager.asset. A **Shadow tag** is not required. Generated shadows inherit the caster GameObject layer.
 
-?> New shadows will be placed on Shadows sorting layer, but you can configure the shadow sorting layer in Stylized Shadow Caster 2D options.
+?> New shadows use the global Shadow Sorting Layer, unless the caster enables Override Sorting Layer.
 
 #### - Step 4 : Player settings 
 
@@ -41,7 +43,7 @@ They are generally good for 2.5D games, with objects drawn in perspective.
 
 !> Firstly, we must **add the 2D Stylized Lighting System to the scene** (it's in prefabs folder): 
 
-!> You also need to **unpack the prefab**, since any changes made to a prefab won't be saved!!!
+?> You can unpack the prefab for a completely scene-local setup, or keep it as a prefab instance and save your changes as prefab overrides.
 
 ![logo](images/5.png ':size=600')
 
@@ -60,3 +62,5 @@ They are generally good for 2.5D games, with objects drawn in perspective.
 ?>  Now you should see your shadows!
 
 ?>  All there’s left is to tune them to your liking and make your game look better!
+
+?> Use **Create / Repair All** on 2D Stylized Lighting if a scene was migrated from an older version or generated shadows need to be repaired.

@@ -2,6 +2,8 @@
 
 > official documentation of this asset 
 
+?> These pages describe Modern 2D Shadows 2.2.7. The minimum supported Unity version is 2022.3. The same source includes compatibility guards for Unity 6.5, 6.6, 6.7 and later Unity 6.x releases. Use the Universal Render Pipeline and 2D Renderer version supported by your exact Unity editor.
+
 If you have any problems or you don't understand something in the docs, you can write to me on my official discord server. It's a server for : 
 
 - bug reports

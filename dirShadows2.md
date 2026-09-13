@@ -49,20 +49,8 @@ This speed-ups the system considerably.
 
 #### 2D URP Light sources
 
-?> You can use 2D URP Lights as your light source
+?> You can use subscribed URP Spot/Point Light2D components as light sources. Every supported subscribed light gets an independent caster/shadow pair instead of blending the positions of the three closest lights.
 
-?> In case of multiple light sources near one shadow, shadow position will be interpolated between three closest light sources
+?> Read **URP 2D Light Modes** for subscriptions, realistic rendered-light detection, Persistent Shadow Alpha and performance controls.
 
-![logo](images/ls.png 'size=200')
-
-> **Minimum alpha** is the alpha of the shadow when it's not lit by the light source. It's adviced to leave it on 0 for realistic effect.
-
-> Increasing **Strength in light** makes the shadow more visible even in weaker lights:
-
-> **shadow distance min max** controlls minimum and maximum distance from light source that changes the shadow length
-
-> **shadow length multiplayer** controlls minimum and maximum shadow length. Shadow length is minimal at the minimum distance to light source and maximal at the maximal distance to light source.
-
-?> To see the example of this feature, open the _Point Lights_ demo scene:
-
-![logo](images/ls2.png 'size=200')
+!> In C# the Spot shape is still named `Light2D.LightType.Point` by Unity.
